@@ -19,8 +19,8 @@ class BeaconRegionIBeacon extends BeaconRegion {
   BeaconRegionIBeacon({
     @required String identifier,
     @required String proximityUUID,
-    int major,
-    int minor,
+    String major, // https://github.com/loup-v/beacons/issues/15
+    String minor,
   }) : super(
           identifier: identifier,
           ids: [],
